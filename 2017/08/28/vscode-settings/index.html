@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Virsual Studio Code 配置文件"/>
+
+
+
+
+  <meta name="keywords" content="vscode, 岁月何欢" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="岁月何欢">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.5.0" />
+
+
+
+<link rel="canonical" href="http://yoursite.com/2017/08/28/vscode-settings/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.5.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+    <title> Virsual Studio Code 配置文件 - 岁月何欢 </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">岁月何欢</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">岁月何欢</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              首页
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              归档
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Virsual Studio Code 配置文件
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-08-28
+        </span>
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置文件"><span class="toc-text">配置文件</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <p>这里记录一下我使用<code>VSCode</code>的配置文件，方便查阅(不定时更新)。</p>
+<a id="more"></a>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a><strong>配置文件</strong></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 文件 -&gt; 首选项 -&gt; 设置</span></div><div class="line">&#123;</div><div class="line">    <span class="string">"workbench.iconTheme"</span>: <span class="string">"material-icon-theme"</span>,</div><div class="line">    <span class="string">"workbench.colorTheme"</span>: <span class="string">"Sublime Material Theme - Dark"</span>,</div><div class="line">    <span class="string">"editor.fontSize"</span>: <span class="number">16</span>,</div><div class="line">    <span class="string">"files.exclude"</span>: &#123;</div><div class="line">        <span class="string">"**/.git"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="string">"**/.svn"</span>: <span class="literal">true</span>,  <span class="comment">//不显示svn文件</span></div><div class="line">        <span class="string">"**/.hg"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="string">"**/CVS"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="string">"**/.DS_Store"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="string">"**/node_modules"</span>: <span class="literal">true</span> <span class="comment">// npm包太多,隐藏目录</span></div><div class="line">    &#125;,</div><div class="line">    <span class="string">"editor.wordWrap"</span>: <span class="string">"on"</span>,</div><div class="line">    <span class="string">"files.autoSave"</span>: <span class="string">"off"</span>,</div><div class="line">    <span class="string">"editor.tabSize"</span>: <span class="number">2</span>,</div><div class="line">    <span class="string">"editor.fontFamily"</span>: <span class="string">"Consolas, 'Courier New', monospace"</span>,</div><div class="line">    <span class="string">"window.zoomLevel"</span>: <span class="number">0</span>,</div><div class="line">    <span class="string">"emmet.syntaxProfiles"</span>: &#123;</div><div class="line">        <span class="string">"vue-html"</span>: <span class="string">"html"</span>,</div><div class="line">        <span class="string">"vue"</span>: <span class="string">"html"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="string">"emmet.includeLanguages"</span>: &#123;</div><div class="line">        <span class="string">"vue-html"</span>: <span class="string">"html"</span>,</div><div class="line">        <span class="string">"vue"</span>: <span class="string">"html"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="string">"eslint.validate"</span>: [</div><div class="line">        <span class="string">"javascript"</span>,</div><div class="line">        <span class="string">"javascriptreact"</span>,</div><div class="line">        <span class="string">"vue"</span></div><div class="line">    ],</div><div class="line">    <span class="string">"vetur.format.js.InsertSpaceBeforeFunctionParenthesis"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="string">"javascript.format.insertSpaceBeforeFunctionParenthesis"</span>: <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/vscode/">vscode</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2017/08/28/vscode-plugins/">
+        <span class="next-text nav-default">Virsual Studio Code 常用插件</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:luozxi@163.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/CNCrazyMoon" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Luo</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.5.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.5.0"></script>
+
+  </body>
+</html>
